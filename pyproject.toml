@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docxToMarkdown"
+version = "0.1.0"
+description = "Convert .docx documents into Markdown."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Your Name"}
+]
+requires-python = ">=3.8"
+dependencies = [
+  "python-docx"
+]
+
+[project.scripts]
+docx-to-markdown = "docx_to_markdown.cli:main"
